@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miles Chaffin's Homepage</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        /* Container for Centering Content */
+        .container {
+            max-width: 960px;
+            margin: auto;
+            overflow: auto; /* Contains floats if any */
+            padding: 0 20px;
+        }
+
+        /* Header & Navigation */
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 20px;
+            min-height: 70px;
+            border-bottom: #0779e4 3px solid;
+        }
+
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+
+        header ul {
+            list-style: none; /* Removes bullet points */
+            float: right; /* Aligns nav to the right */
+            margin-top: 5px; /* Align vertically with title */
+        }
+
+        header li {
+            display: inline; /* Makes list items horizontal */
+            padding: 0 20px 0 20px; /* Spacing between links */
+        }
+
+        header #branding {
+            float: left; /* Aligns title to the left */
+        }
+
+        header #branding h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        header a:hover {
+            color: #ccc;
+            font-weight: bold;
+        }
+
+        /* Hero Section */
+        #hero {
+            min-height: 300px;
+            background: #e2e2e2; /* Light grey background */
+            text-align: center;
+            padding-top: 80px;
+            color: #333;
+        }
+
+        #hero h1 {
+            margin-top: 0;
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+
+        #hero p {
+            font-size: 20px;
+        }
+
+        /* Sections General Styling */
+        section {
+            padding: 40px 0;
+            margin-bottom: 20px;
+            background: #fff; /* White background for content sections */
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 28px;
+            color: #0779e4; /* Blue accent color */
+        }
+
+        /* About Section */
+        #about p {
+            margin-bottom: 15px;
+            text-align: justify; /* Optional: Makes text blocky */
+        }
+
+        /* Projects Section */
+        #projects .project-grid {
+            display: grid; /* Use Grid for layout */
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+            gap: 20px; /* Space between grid items */
+        }
+
+        #pets .project-grid {
+            display: grid; /* Use Grid for layout */
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+            gap: 20px; /* Space between grid items */
+        }
+
+        .project-item {
+            border: 1px solid #ddd;
+            padding: 20px;
+            background: #f9f9f9;
+            text-align: center;
+            display: flex; /* Use flexbox for vertical alignment */
+            flex-direction: column; /* Stack items vertically */
+            justify-content: space-between; /* Space out content */
+            align-items: center; /* Center items horizontally */
+        }
+
+        .project-item img { /* Placeholder for image styling */
+            max-width: 100%;
+            height: auto;
+            background-color: #ccc; /* Placeholder color */
+            min-height: 150px; /* Placeholder height */
+            max-height: 400px;
+            display: block;
+            margin: 20px 0; /* Add spacing around the image */
+            border: 1px solid #bbb;
+        }
+
+        .project-item h3 {
+            margin: 15px 0; /* Add spacing above and below the name */
+            color: #333;
+        }
+
+        .project-item p {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .project-item a {
+            display: inline-block;
+            padding: 5px 10px;
+            background: #0779e4;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 3px;
+        }
+
+        .project-item a:hover {
+            background: #333;
+        }
+
+        /* Contact Section */
+        #contact p {
+            text-align: center;
+            font-size: 18px;
+        }
+         #contact a {
+            color: #0779e4;
+            text-decoration: none;
+         }
+         #contact a:hover {
+            text-decoration: underline;
+         }
+
+
+        /* Footer */
+        footer {
+            padding: 20px;
+            margin-top: 20px;
+            color: #fff;
+            background-color: #333;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><a href="#hero">Miles Chaffin</a></h1> </div>
+            <nav>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#pets">Pets</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h1>Miles Chaffin</h1>
+            <p>Hello! I'm Miles, and this is my simple website 🎉</p>
+            </div>
+    </section>
+
+    <main>
+        <section id="about" class="container">
+            <h2>About Me</h2>
+            <p>
+                Results-driven professional with a proven track record of guiding diverse customers to successful SaaS implementations. 
+                Building strong client partnerships, driving growth, and rescuing at-risk accounts are  core strengths. 
+                I'm adept at navigating complex technical environments, including a wide range of software development languages and CI/CD toolchains, 
+                while collaborating cross-functionally to deliver exceptional customer experiences, 
+                and I'm passionate about empowering teams to optimize their development pipelines with cutting-edge AI solutions.
+            </p>
+        </section>
+
+        <!-- <section id="projects">
+            <div class="container">
+                <h2>My Projects</h2>
+                <div class="project-grid">
+                    <div class="project-item">
+                        <img src="placeholder.jpg" alt="Project 1 Screenshot/Image">
+                        <h3>Project Title 1</h3>
+                        <p>Brief description of the project. What problem did it solve? What technologies were used?</p>
+                        <a href="#">View Project</a> </div>
+
+                    <div class="project-item">
+                         <img src="placeholder.jpg" alt="Project 2 Screenshot/Image">
+                        <h3>Project Title 2</h3>
+                        <p>Brief description of the project. What problem did it solve? What technologies were used?</p>
+                        <a href="#">View Project</a> </div>
+
+                    <div class="project-item">
+                         <img src="placeholder.jpg" alt="Project 3 Screenshot/Image">
+                        <h3>Project Title 3</h3>
+                        <p>Brief description of the project. What problem did it solve? What technologies were used?</p>
+                        <a href="#">View Project</a> </div>
+                     </div>
+            </div>
+        </section> -->
+
+        <section id="pets">
+            <div class="container">
+                <h2>My Pets</h2>
+                <div class="project-grid">
+                    <div class="project-item">
+                        <img src="blue.jpg" alt="Blue Photo">
+                        <h3>Blue</h3>
+                        <p>I adopted Blue in 2020 when I was stuck at home by myself. He's Husky/Bully mix, and he's missing all his front teeth.</p>
+                    </div>
+
+                    <div class="project-item">
+                        <img src="mango.jpg" alt="Mango Photo">
+                        <h3>Mango</h3>
+                        <p>I accidentally adopted Mango (and his brother Pumpkin) when I moved out from my parent's house and they wanted to do some construction. 
+                            He's a sweetie so I couldn't say no.
+                        </p>
+                    </div>
+
+                    <div class="project-item">
+                        <img src="pumpkin.jpg" alt="Pumpkin Photo">
+                        <h3>Pumpkin</h3>
+                        <p>Mango's slightly older half-brother. He's very very cuddly, but is also devious and knows he can use his cuteness to his advantage.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="container">
+            <h2>Get In Touch</h2>
+            <p>
+                I'm currently available for new opportunities!
+            </p>
+            <p>
+                Feel free to reach out via email: <a href="mailto:mileschaffin@gmail.com">mileschaffin@gmail.com</a>
+            </p>
+            </section>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; 2025 Miles Chaffin</p>
+    </footer>
+
+</body>
+</html>
